@@ -4,11 +4,15 @@
     "type": "project",
     "require": {
         "silverstripe/serve": "*",
-        "silverstripe/framework": "^4",
-        "silverstripe/admin": "^1"
+        "silverstripe/framework": "^4.4@dev",
+        "silverstripe/assets": "^1.4@dev",
+        "silverstripe/versioned": "^1.4@dev",
+        "silverstripe/admin": "^1.4@dev",
+        "silverstripe/graphql": "^3"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.0",
+        "silverstripe/graphql-devtools": "^1@dev"
     },
     "license": "MIT",
     "authors": [

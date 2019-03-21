@@ -8,3 +8,34 @@ SilverStripe\Admin\AdminRootController:
 SilverStripe\Security\Member:
   extensions:
    - Clubhouse\Model\MemberRole
+SilverStripe\Control\Director:
+  rules:
+    'graphql': '%$SilverStripe\GraphQL\Controller.default'
+SilverStripe\GraphQL\Manager:
+  schemas:
+    default:
+      scaffolding:
+        types:
+          Clubhouse\Model\Clubhouse:
+            fields: [ID, Title, Subdomain]
+            operations:
+              read: true
+            nestedQueries:
+              Members: true
+              Posts: true
+          Clubhouse\Model\Post:
+            fields: [Created, Subject, Message, Importance, Author]
+            operations:
+              read: true
+              readOne: true
+              create: true
+              update: true
+              delete: true
+          SilverStripe\Security\Member:
+            fields: [FirstName, Surname, Email]
+            operations:
+              read: true
+              readOne: true
+              create: true
+              update: true
+              delete: true
