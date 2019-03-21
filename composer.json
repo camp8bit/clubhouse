@@ -1,0 +1,28 @@
+{
+    "name": "camp8bit/clubhouse",
+    "description": "Replacement for Facebook private groups",
+    "type": "project",
+    "require": {
+        "silverstripe/serve": "*",
+        "silverstripe/framework": "^4",
+        "silverstripe/admin": "^1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Minnee",
+            "email": "sam@silverstripe.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Clubhouse\\": "app"
+        }
+    },
+    "extra": {
+        "resources-dir": "resources"
+    }
+}
