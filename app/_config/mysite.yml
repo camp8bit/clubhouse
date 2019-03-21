@@ -3,3 +3,8 @@ Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
+SilverStripe\Admin\AdminRootController:
+  default_panel: Clubhouse\Admin\ClubhouseAdmin
+SilverStripe\Security\Member:
+  extensions:
+   - Clubhouse\Model\MemberRole
