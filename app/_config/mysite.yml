@@ -39,3 +39,6 @@ SilverStripe\GraphQL\Manager:
               create: true
               update: true
               delete: true
+
+SilverStripe\Control\Email\Email:
+  admin_email: no-reply@clubhouse.sminn.ee
