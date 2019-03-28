@@ -2,3 +2,6 @@
 /.env
 /vendor/
 /public/resources/
+/web/node_modules/**
+
+
